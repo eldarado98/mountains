@@ -3,148 +3,175 @@
   <head>
     <meta charset="UTF-8">
     <title>Mountains</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main.css"/>
   </head>
-  <body>
-    <div>
-      <img src="images/logo.png" width="117" height="27" alt="Mountains"/>
-      <ul>
-        <li><a href="#about">Our Story</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#journal">Journal</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#journal">Journal</a></li>
-      </ul>
-      <a href="#contact">Call Us</a></div>
-    <div>
-      <h1>Travel with Us to the Mountains</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
-      <a href="#order">Order Now</a>
+  <body id="home">
+    <div class="nav">
+      <div class="nav-container">
+        <a href="#home">
+          <img class="logo" src="images/logo.png" width="117" height="27" alt="Mountains"/>
+        </a>
+        <ul class="menu">
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#journal">Journal</a></li>
+        </ul>
+        <a class="call-us" href="#contact">Call Us</a>
+      </div>
     </div>
-    <div id="about">
-      <h2>About Us</h2>
-      <p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae.
-        Mauris suscipit vel lectus at luctus.</p>
-      <a href="#about">Read More</a>
-      <img src="images/about-big.jpg" width="806" height="570" alt="three girls in the mountains"/>
-      <img src="images/about-small.jpg" width="350" height="350" alt="human in the mountain"/>
+    <div class="intro">
+      <div class="header">
+        <div class="header-container">
+          <h1 class="title">Travel with Us to the Mountains</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing<br /> elit, sed do eiusmod tempor incidid</p>
+          <a class="btn" href="#order">Order Now</a>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <div class="about-container">
+          <h2 class="about-title">About Us</h2>
+          <p>Aliquam sed posuere urna, et gravida nisl. Praesent <br/>interdum nisl libero, pretium egestas purus eleifend<br/> vitae.
+            Mauris suscipit vel lectus at luctus.</p>
+          <a class="btn about-btn" href="#about">Read More</a>
+          <img class="about-big" src="images/about-big.jpg" width="806" height="570" alt="three girls in the mountains"/>
+          <img class="about-small" src="images/about-small.jpg" width="350" height="350" alt="human in the mountain"/>
+        </div>
+      </div>
     </div>
-    <div id="journal">
-      <h2>Our Journal</h2>
-      <ul>
-        <li>
-          <div>Love</div>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h3>
-          <p>You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone
-            about your experience and skills.</p>
-          <img src="images/journal1.jpg" width="380" height="380" alt="love"/>
-        </li>
-        <li>
-          <div>Tree</div>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-          <p>The way to a successful brand is hard, but always very interesting. Share the full story of your project – from
-            the very first day until now.</p>
-          <img src="images/journal2.jpg" width="380" height="380" alt="tree"/>
-        </li>
-        <li>
-          <div>Water</div>
-          <h3>Little pieces of our proudness</h3>
-          <p>What do you do better than your competitors? What are you proud of? What details and advantages of your product
-            you want people to know about?</p>
-          <img src="images/journal3.jpg" width="380" height="380" alt="water"/>
-        </li>
-      </ul>
+    <div class="journal" id="journal">
+      <div class="journal-container">
+        <h2>Our Journal</h2>
+        <ul class="articles">
+          <li class="article article-first">
+            <img src="images/journal1.jpg" width="380" height="380" alt="love"/>
+            <div class="label label-love">Love</div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h3>
+            <p>You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone
+              about your experience and skills.</p>
+          </li>
+          <li class="article article-second">
+            <img src="images/journal2.jpg" width="380" height="380" alt="tree"/>
+            <div class="label label-tree">Tree</div>
+            <h3>Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit</h3>
+            <p>The way to a successful brand is hard, but always very interesting. Share the full story of your project – from
+              the very first day until now.</p>
+          </li>
+          <li class="article article-third">
+            <img src="images/journal3.jpg" width="380" height="380" alt="water"/>
+            <div class="label label-water">Water</div>
+            <h3>Little pieces of our proudness</h3>
+            <p>What do you do better than your competitors? What are you proud of? What details and advantages of your product
+              you want people to know about?</p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="order">
-      <h2>Do You Wanna Go?</h2>
-      <p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae.
-        Mauris suscipit vel lectus at luctus.</p>
-      <form method="post" action="/">
-        <input type="text" placeholder="Your name:" name="name"/>
-        <input type="tel" placeholder="Your phone:" name="phone"/>
-        <button>Order Now</button>
-        <div>Your data will not be transferred</div>
-      </form>
+    <div id="order" class="order">
+      <div class="order-container">
+        <h2 class="order-title">Do You Wanna Go?</h2>
+        <p class="order-lead">Aliquam sed posuere urna, et gravida nisl. Praesent<br/> interdum nisl libero, pretium egestas purus eleifend vitae.
+          Mauris suscipit vel lectus at luctus.</p>
+        <form class="order-form" method="post" action="/">
+          <input class="order-input" type="text" placeholder="Your name:" name="name"/>
+          <input class="order-input" type="tel" placeholder="Your phone:" name="phone"/>
+          <button class="btn order-btn">Order Now</button>
+        </form>
+        <div class="order-info">Your data will not be transferred</div>
+      </div>
     </div>
-    <div id="work">
-      <h2>How We Work</h2>
-      <ol>
-        <li>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>consectetur adipisicing elit, sed do eiusmod tempor incididun</p>
-        </li>
-        <li>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>consectetur adipisicing elit, sed do eiusmod tempor incididun</p>
-        </li>
-        <li>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>consectetur adipisicing elit, sed do eiusmod tempor incididun</p>
-        </li>
-        <li>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>consectetur adipisicing elit, sed do eiusmod tempor incididun</p>
-        </li>
-      </ol>
+    <div class="work" id="work">
+      <div class="work-container">
+        <h2>How We Work</h2>
+        <ol class="work-list">
+          <li>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          </li>
+          <li>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          </li>
+          <li>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          </li>
+          <li>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          </li>
+        </ol>
+      </div>
     </div>
-    <div>
-      <h2>Travel With Us</h2>
-      <ul>
-        <li>
-          <img src="images/price1.jpg" width="200" height="382" alt="Carpathian"/>
-          <div>Rating: 4/5</div>
-          <h3>Carpathian</h3>
-          <p>Lorem ipsum dolor sir amet, consectetur</p>
-          <del>3150$</del>
-          <div>$793</div>
-        </li>
-        <li>
-          <img src="images/price2.jpg" width="200" height="382" alt="Alps"/>
-          <div>Rating: 5/5</div>
-          <h3>Alps</h3>
-          <p>Lorem ipsum dolor sir amet, consectetur</p>
-          <del>3150$</del>
-          <div>$1893</div>
-        </li>
-        <li>
-          <img src="images/price3.jpg" width="200" height="382" alt="Pyrenees"/>
-          <div>Rating: 5/5</div>
-          <h3>Pyrenees</h3>
-          <p>Lorem ipsum dolor sir amet, consectetur</p>
-          <del>3150$</del>
-          <div>$2593</div>
-        </li>
-        <li>
-          <img src="images/price4.jpg" width="200" height="382" alt="Rocky"/>
-          <div>Rating: 5/5</div>
-          <h3>Rocky</h3>
-          <p>Lorem ipsum dolor sir amet, consectetur</p>
-          <del>3150$</del>
-          <div>$2123</div>
-        </li>
-        <li>
-          <img src="images/price5.jpg" width="200" height="382" alt="Kavkaz"/>
-          <div>Rating: 3/5</div>
-          <h3>Kavkaz</h3>
-          <p>Lorem ipsum dolor sir amet, consectetur</p>
-          <del>3150$</del>
-          <div>$593</div>
-        </li>
-      </ul>
+    <div class="travel">
+      <div class="travel-container">
+        <h2>Travel With Us</h2>
+        <ul>
+          <li>
+            <img src="images/price1.jpg" width="200" height="382" alt="Carpathian"/>
+            <div class="rating rating4">Rating: 4/5</div>
+            <h3>Carpathian</h3>
+            <p>Lorem ipsum dolor sir amet, consectetur</p>
+            <del class="price-old">3150$</del>
+            <div class="price">$793</div>
+          </li>
+          <li>
+            <img src="images/price2.jpg" width="200" height="382" alt="Alps"/>
+            <div class="rating rating5">Rating: 5/5</div>
+            <h3>Alps</h3>
+            <p>Lorem ipsum dolor sir amet, consectetur</p>
+            <del class="price-old">3150$</del>
+            <div class="price">$1893</div>
+          </li>
+          <li>
+            <img src="images/price3.jpg" width="200" height="382" alt="Pyrenees"/>
+            <div class="rating rating5">Rating: 5/5</div>
+            <h3>Pyrenees</h3>
+            <p>Lorem ipsum dolor sir amet, consectetur</p>
+            <del class="price-old">3150$</del>
+            <div class="price">$2593</div>
+          </li>
+          <li>
+            <img src="images/price4.jpg" width="200" height="382" alt="Rocky"/>
+            <div class="rating rating5">Rating: 5/5</div>
+            <h3>Rocky</h3>
+            <p>Lorem ipsum dolor sir amet, consectetur</p>
+            <del class="price-old">3150$</del>
+            <div class="price">$2123</div>
+          </li>
+          <li>
+            <img src="images/price5.jpg" width="200" height="382" alt="Kavkaz"/>
+            <div class="rating rating3">Rating: 3/5</div>
+            <h3>Kavkaz</h3>
+            <p>Lorem ipsum dolor sir amet, consectetur</p>
+            <del class="price-old">3150$</del>
+            <div class="price">$593</div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="services">
+    <div class="gallery" id="services">
       <h2>Gallery</h2>
-      <ul>
-        <li><img src="images/gallery1.jpg" width="263" height="343" alt=""/></li>
-        <li><img src="images/gallery2.jpg" width="263" height="281" alt=""/></li>
-        <li><img src="images/gallery3.jpg" width="361" height="243" alt=""/></li>
-        <li><img src="images/gallery4.jpg" width="361" height="381" alt=""/></li>
-        <li><img src="images/gallery5.jpg" width="457" height="343" alt=""/></li>
-        <li><img src="images/gallery6.jpg" width="455" height="281" alt=""/></li>
-      </ul>
+      <div class="images">
+        <ul>
+          <li><img src="images/gallery1.jpg" width="263" height="343" alt=""/></li>
+          <li><img src="images/gallery2.jpg" width="263" height="281" alt=""/></li>
+        </ul>
+        <ul>
+          <li><img src="images/gallery3.jpg" width="361" height="243" alt=""/></li>
+          <li><img src="images/gallery4.jpg" width="361" height="381" alt=""/></li>
+        </ul>
+        <ul>
+          <li><img src="images/gallery5.jpg" width="457" height="343" alt=""/></li>
+          <li><img src="images/gallery6.jpg" width="455" height="281" alt=""/></li>
+        </ul>
+      </div>
     </div>
-    <div>
+    <div class="logos">
       <ul>
         <li><img src="images/slack.png" width="80" height="24" alt="Slack logo"/></li>
         <li><img src="images/adobe.png" width="38" height="34" alt="Adobe logo"/></li>
@@ -154,39 +181,43 @@
         <li><img src="images/nike.png" width="70" height="26" alt="Nike logo"/></li>
       </ul>
     </div>
-    <div>
+    <div class="our-clients">
       <h2>Our Clients Say</h2>
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse</p>
-        <cite><img src="images/autor1.jpg" width="68" height="68" alt=""/> <b>Pavlil Yaroslav</b> Web designer</cite>
-      </blockquote>
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse</p>
-        <cite><img src="images/autor2.jpg" width="68" height="68" alt=""/> <b>John Scott</b> The Fringe</cite>
-      </blockquote>
+      <div class="reviews">
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse</p>
+          <cite><img src="images/autor1.jpg" width="68" height="68" alt=""/> <b>Pavlil Yaroslav</b> Web designer</cite>
+        </blockquote>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse</p>
+          <cite><img src="images/autor2.jpg" width="68" height="68" alt=""/> <b>John Scott</b> The Fringe</cite>
+        </blockquote>
+      </div>
     </div>
-    <div id="contact">
-      <h2>Contacts</h2>
-      <p>Sing up for out newsletter to receive updates</p>
-      <form method="post" action="/">
-        <input type="text" placeholder="Name" name="name"/>
-        <input type="tel" placeholder="Phone" name="phone"/>
-        <input type="email" placeholder="E-mail" name="email"/>
-        <button>Send</button>
-      </form>
+    <div class="contacts" id="contact">
+      <div class="contacts-container">
+        <h2>Contacts</h2>
+        <p>Sing up for out newsletter to receive updates</p>
+        <form method="post" action="/">
+          <input type="text" placeholder="Name" name="name"/>
+          <input type="tel" placeholder="Phone" name="phone"/>
+          <input type="email" placeholder="E-mail" name="email"/>
+          <button class="btn">Send</button>
+        </form>
+      </div>
     </div>
-    <div>
-      <p>All rights reserver 2015</p>
-      <ul>
-        <li><a href="https://twitter.com">Twitter</a></li>
-        <li><a href="https://facebook.com">Facebook</a></li>
-        <li><a href="https://vk.com">Vkontakte</a></li>
+    <div class="footer">
+      <p class="copyright">All rights reserver 2015</p>
+      <ul class="socials">
+        <li><a class="social-twitter" href="https://twitter.com">Twitter</a></li>
+        <li><a class="social-facebook" href="https://facebook.com">Facebook</a></li>
+        <li><a class="social-vkontakte" href="https://vk.com">Vkontakte</a></li>
       </ul>
-      <a href="tel:1234243123">1 234 243 123</a>
+      <a class="phone" href="tel:1234243123">1 234 243 123</a>
     </div>
   </body>
 </html>
