@@ -14,13 +14,13 @@
           <img class="logo" src="images/logo.png" width="117" height="27" alt="Mountains"/>
         </a>
         <ul class="menu">
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#journal">Journal</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#order">Buy</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#journal">Journal</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#our-clients">Our Clients</a></li>
         </ul>
         <a class="call-us" href="#contact">Call Us</a>
       </div>
@@ -77,10 +77,10 @@
         <h2 class="order-title">Do You Wanna Go?</h2>
         <p class="order-lead">Aliquam sed posuere urna, et gravida nisl. Praesent<br/> interdum nisl libero, pretium egestas purus eleifend vitae.
           Mauris suscipit vel lectus at luctus.</p>
-        <form class="order-form" method="post" action="/">
-          <input class="order-input" type="text" placeholder="Your name:" name="name"/>
+        <form class="order-form" method="post">
+          <input class="order-input" type="text" placeholder="Your name:" name="name" required/>
           <span class="separator"></span>
-          <input class="order-input" type="tel" placeholder="Your phone:" name="phone"/>
+          <input class="order-input" type="tel" placeholder="Your phone:" name="phone" required/>
           <button class="btn order-btn">Order Now</button>
         </form>
         <div class="order-info">Your data will not be transferred</div>
@@ -109,7 +109,7 @@
         </ol>
       </div>
     </div>
-    <div class="travel">
+    <div class="travel" id="prices">
       <div class="travel-container">
         <h2>Travel With Us</h2>
         <ul>
@@ -156,7 +156,7 @@
         </ul>
       </div>
     </div>
-    <div class="gallery" id="services">
+    <div class="gallery" id="gallery">
       <h2>Gallery</h2>
       <div class="images">
         <ul>
@@ -183,7 +183,7 @@
         <li><img src="images/nike.png" width="70" height="26" alt="Nike logo"/></li>
       </ul>
     </div>
-    <div class="our-clients">
+    <div class="our-clients" id="our-clients">
       <h2>Our Clients Say</h2>
       <div class="reviews">
         <blockquote>
@@ -204,10 +204,10 @@
       <div class="contacts-container">
         <h2>Contacts</h2>
         <p>Sing up for out newsletter to receive updates</p>
-        <form method="post" action="/">
-          <input type="text" placeholder="Name" name="name"/>
-          <input type="tel" placeholder="Phone" name="phone"/>
-          <input type="email" placeholder="E-mail" name="email"/>
+        <form method="post">
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="tel" placeholder="Phone" name="phone" required/>
+          <input type="email" placeholder="E-mail" name="email" required/>
           <button class="btn">Send</button>
         </form>
       </div>
@@ -227,4 +227,5 @@
     ga('create','UA-92962004-1','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="scripts/main.js"></script>
 </html>
