@@ -71,6 +71,18 @@ img {
   top: 0;
   left: 0;
   z-index: 9;
+  transition: all 400ms;
+}
+
+.nav.active {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+@supports (-webkit-backdrop-filter:blur(15px)) {
+  .nav.active {
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.75);
+  }
 }
 
 .nav-container {
@@ -96,10 +108,20 @@ img {
 
 .menu a {
   display: block;
-  padding: 12px;
+  margin: 0 12px;
+  padding: 12px 0 9px 0;
+  border-bottom: 3px solid transparent;
   color: #9daeb6;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.menu a:hover {
+  color: #36aeea;
+}
+
+.menu .active {
+  border-color: #36aeea;
 }
 
 .call-us {
@@ -114,6 +136,12 @@ img {
   text-align: center;
   padding: 10px 10px 12px;
   text-decoration: none;
+  transition: all 300ms;
+}
+
+.call-us:hover {
+  color: #fff;
+  background-color: #36aeea;
 }
 
 .intro {
@@ -631,16 +659,11 @@ img {
   background-color: #5c8894;
 }
 
-.contacts::before {
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  right: -100px;
-  bottom: -100px;
-  content: '';
-  background-image: url(../images/footer-bg.jpg);
-  background-position: -602px -265px;
-  filter: blur(35px);
+@supports (-webkit-backdrop-filter:blur(30px)) {
+  .contacts {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(30px);
+  }
 }
 
 .contacts h2 {
